@@ -1,0 +1,110 @@
+.row {
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .posters {
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  .posters::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .poster {
+    max-height: 250px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .smallposter {
+    max-height: 150px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .youtube {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .youtube-video {
+    margin-bottom: 30px; /* Add some bottom margin to make space for the close button */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: red; /* Update the color when hovered */
+  }
+  
+  
+  .container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+    max-width: 92%;
+    height: 92%;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .container:hover .description {
+    opacity: 1;
+  }
+  
+  .playButton {
+    background-color: rgba(51, 51, 51, 0.5);
+    margin-top: 5px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 80px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  
+  .playButton:hover {
+    background-color: black;
+    color: white;
+  }
+  
